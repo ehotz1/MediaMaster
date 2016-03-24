@@ -1,0 +1,23 @@
+﻿<Window x:Class="MediaMaster.MediaWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MediaMaster"
+        mc:Ignorable="d"
+        Title="Media" Height="Auto" Width="Auto"
+        Loaded="Window_Loaded"
+        KeyDown="Window_KeyDown"
+        Background="Black"
+        Closed="Window_Closed"
+        
+        >
+    <Window.Resources>
+        
+    </Window.Resources>
+    <Grid>
+        <MediaElement Name="player" Source="{Binding Source}" LoadedBehavior="Play" 
+                      UnloadedBehavior="Manual" MediaEnded="player_MediaEnded"/>
+    </Grid>
+    
+</Window>

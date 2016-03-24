@@ -1,0 +1,30 @@
+﻿<Window x:Class="MediaMaster.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MediaMaster"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="420" Width="680"
+        Background="Black"
+        Closed="Window_Closed">
+    <Window.Resources>
+
+    </Window.Resources>
+    <Grid HorizontalAlignment="Left" Margin="0,0,0,0" Width="680">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Movies" Content="Movies" HorizontalAlignment="Left" Margin="93,19,0,0" VerticalAlignment="Top" Width="175" Height="146" FontSize="48" Click="Movies_Click" Background="Blue"/>
+        <Button x:Name="Shows" Content="Shows" HorizontalAlignment="Left" Margin="93,204,0,0" VerticalAlignment="Top" Width="175" Height="146" FontSize="48" Click ="Shows_Click" Background="ForestGreen"/>
+        <Button x:Name="Music" Content="Music" HorizontalAlignment="Left" Margin="406,19,0,0" VerticalAlignment="Top" Width="175" Height="146" FontSize="48" Click="Music_Click" Background="Yellow"/>
+        <Button x:Name="Photos" Content="Photos" HorizontalAlignment="Left" Margin="406,204,0,0" VerticalAlignment="Top" Width="175" Height="146" FontSize="48" Click="Photos_Click" Background="Red" />
+        <Button x:Name="MovieDir" Content="Set Directory" HorizontalAlignment="Left" Margin="193,168,0,0" VerticalAlignment="Top" Width="75" Click="MovieDir_Click"/>
+        <Button x:Name="ShowDir" Content="Set Directory" HorizontalAlignment="Left" Margin="193,355,0,0" VerticalAlignment="Top" Width="75" Click="ShowDir_Click"/>
+        <Button x:Name="MusicDir" Content="Set Directory" HorizontalAlignment="Left" Margin="506,168,0,0" VerticalAlignment="Top" Width="75" Click="MusicDir_Click"/>
+        <Button x:Name="PhotoDir" Content="Set Directory" HorizontalAlignment="Left" Margin="506,355,0,0" VerticalAlignment="Top" Width="75" Click="PhotoDir_Click"/>
+    </Grid>
+</Window>
